@@ -1,4 +1,4 @@
-/***📜 List Operations Challenge (Python)
+"""📜 List Operations Challenge (Python)
 Problem Statement
 
 You are given an initially empty list. Your task is to perform a series of operations on this list based on user input commands.
@@ -48,7 +48,7 @@ Sample Output
 [6, 5, 10]
 [1, 5, 9, 10]
 [9, 5, 1]
-***/
+"""
 if __name__ == '__main__':
     N = int(input())
 
