@@ -80,6 +80,29 @@ if sq*sq == sqroot:
 	print("perfect square")
 else:
 	print("not perfect square")
+print("----------------------------------")
+
+mem = int(input("enter members:"))
+cars = mem//5
+if mem%5!=0:
+	cars+=1
+print("cars needed",cars)
+print("----------------------------------")
+
+if (a>b and a<c) or (a>c and a<b):
+	print("Second highest",a)
+elif (b > a and b < c) or (b > c and b < a):
+	print("Second highest",b)
+else:
+	print("Second highest",c)
+print("----------------------------------")
+
+year = int(input("enter yr:"))
+if (year%4==0 and year%100!=0) or (year%400==0):
+	print("Leap Year")
+else:
+	print("Not Leap year")
+
 
 
 

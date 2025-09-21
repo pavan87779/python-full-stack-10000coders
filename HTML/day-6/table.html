@@ -1,87 +1,188 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Assignment Tables</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
+    <div>
+     <center>
+        <h1>tables</h1>
+        <table border="2px" width="30%" height="30%">
+            <thead>
+                <tr>
+                    <th rowspan="3">day</th>
+                    <th colspan="3">seminar</th>
 
-<!-- Seminar Schedule Table -->
-<h3>Seminar Schedule</h3>
-<table border="1" cellpadding="5" cellspacing="0">
-    <tr>
-        <th rowspan="2">Day</th>
-        <th colspan="2">Schedule</th>
-        <th rowspan="2">Topic</th>
-    </tr>
-    <tr>
-        <th>Begin</th>
-        <th>End</th>
-    </tr>
-    <tr>
-        <td rowspan="2">Monday</td>
-        <td>8:00 a.m.</td>
-        <td>5:00 p.m.</td>
-        <td>Introduction to XML</td>
-    </tr>
-    <tr>
-        <td>8:00 a.m.</td>
-        <td>11:00 a.m.</td>
-        <td>Validity: DTD and Relax NG</td>
-    </tr>
-    <tr>
-        <td rowspan="2">Tuesday</td>
-        <td>11:00 a.m.</td>
-        <td>2:00 p.m.</td>
-        <td>XPath</td>
-    </tr>
-    <tr>
-        <td>2:00 p.m.</td>
-        <td>5:00 p.m.</td>
-        <td>XSL Transformations</td>
-    </tr>
-    <tr>
-        <td>Wednesday</td>
-        <td>8:00 a.m.</td>
-        <td>12:00 p.m.</td>
-        <td>XSL Formatting Objects</td>
-    </tr>
-</table>
+                    
+                </tr>
+                <tr>
+                   
+                    <th colspan="2">schedule</th>
+                    
+                    <th rowspan="2">topic</th>
+                </tr>
+                <tr>
+                    
+                    <th>begin</th>
+                    <th>end</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">monday</td>
+                    <td rowspan="2">8.00am</td>
+                    <td rowspan="2">5.00pm</td>
+                    <td>introduction to xml </td>
+                    
+                </tr>
+                <tr>
+                    
+                    
+                    
+                    <td>introduction to html</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">tuesday</td>
+                    <td>8.00am</td>
+                    <td>11.00am</td>
+                    <td rowspan="2">xpath</td>
+                </tr>
+                <tr>
+                   
+                    <td>11.00am</td>
+                    <td>2.00pm</td>
+                    
+                </tr>
+                <tr>
+                    
+                    <td>2.00pm</td>
+                    <td>5.00pm</td>
+                    <td>xsl1</td>
+                </tr>
+                <tr>
+                    <td>wednesday</td>
+                    <td>8.00am</td>
+                    <td>11.00am</td>
+                    <td>xsl</td>
+                </tr>
+            </tbody>
+        </table>
+    </center>
+    </div>
+    <div>
+        <br>
+         <center>
+        <table border="2" width="30%">
+            <thead bgcolor="lightblue">
+                <tr>
+                    <th><b>device</b></th>
+                    <th><b>brand</b></th>
+                    <th colspan="2"><b>specifications</b></th>
+                </tr>
 
-<br><br>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">smartphone</td>
+                    <td rowspan="3">apple</td>
+                    <td style="background-color: brown;"><b>model</b></td>
+                    <td style="background-color: brown;"><b>storage</b></td>
 
-<!-- Device Specifications Table -->
-<h3>Device Specifications</h3>
-<table border="1" cellpadding="5" cellspacing="0">
-    <tr bgcolor="turquoise">
-        <th>Device</th>
-        <th>Brand</th>
-        <th colspan="2">Specifications</th>
-    </tr>
-    <tr>
-        <td rowspan="3">Smartphone</td>
-        <td rowspan="3">Apple</td>
-        <th bgcolor="yellow">Model</th>
-        <th bgcolor="yellow">Storage</th>
-    </tr>
-    <tr>
-        <td>iPhone 12 Pro</td>
-        <td>256GB</td>
-    </tr>
-    <tr>
-        <td>iPhone SE</td>
-        <td>128GB</td>
-    </tr>
-    <tr>
-        <td>Laptop</td>
-        <td>HP</td>
-        <td colspan="2">15.6" Display</td>
-    </tr>
-    <tr>
-        <td>Tablet</td>
-        <td>Samsung</td>
-        <td colspan="2">10.5" Display</td>
-    </tr>
-</table>
+                </tr>
+                <tr>
+                    <td>iphone 12pro</td>
+                    <td>256gb</td>
+                </tr>
+                <tr>
+                    <td>
+                        iphone se
+                    </td>
+                    <td>128gb</td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>laptop</td>
+                    <td>hp</td>
+                    <td colspan="2">15.6"display</td>
+                </tr>
+                <tr>
+                    <td>tablet</td>
+                    <td>samsung</td>
+                    <td colspan="2">10.5"display</td>
+                </tr>
 
+            </tbody>
+        </table>
+    </center>
+    </div>
+    <div>
+        <br>
+        <center>
+        <table border="2px" width="20%" cellpadding="5px">
+            <thead>
+                <tr>
+                    <th rowspan="2"><b>day/period </b></th>
+                    <th rowspan="2"><b>I 9.30-10.20</b></th>
+                    <th rowspan="2"><b>II 10.20-11.10</b></th>
+                    <th rowspan="2"><b>III 11.10-12.00 </b></th>
+                    <th rowspan="2"><b>12.00-12.40</b></th>
+                    <th rowspan="2"><b>IV 12.40-1.30</b></th>
+                    <th rowspan="2"><b>V 1.30-2.20</b></th>
+                    <th rowspan="2"><b>VI 2.20-3.10</b></th>
+                    <th rowspan="2"><b>VII 3.10-4.00</b></th>
+                </tr>
+
+            </thead>
+            <tbody>
+                <tr>
+                    <td>monday</td>
+                    <td>eng</td>
+                    <td>mat</td>
+                    <td>che</td>
+                    <td rowspan="6">lunch</td>
+                    <td colspan="3">lab</td>
+                    <td>phy</td>
+
+                </tr>
+                <tr>
+                    <td>tuesday</td>
+                    <td colspan="3">lab</td>
+                    <td>eng</td>
+                    <td>che</td>
+                    <td>mat</td>
+                    <td>sports</td>
+                </tr>
+                <tr>
+                    <td>wednesday</td>
+                    <td>mat</td>
+                    <td>phy</td>
+                    <td>eng</td>
+                    <td>che</td>
+                    <td colspan="3">library</td>
+                </tr>
+                <tr>
+                    <td>thursday</td>
+                    <td>phy</td>
+                    <td>eng</td>
+                    <td>che</td>
+                    <td colspan="3">lab</td>
+                    <td>mat</td>
+                </tr>
+                <tr><td>friday</td>
+                    <td>phy</td>
+                    <td>eng</td>
+                    <td>che</td>
+                    <td colspan="3">lab</td>
+                    <td>mat</td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </center>
+    </div>
+    
 </body>
 </html>
