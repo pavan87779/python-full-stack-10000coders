@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+    color: white;
+}
+.heading ul{
+    display: flex;
+    background-color: yellow;
+    justify-content: space-evenly;
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+}
+.heading ul li{
+    list-style-type: none;
+    color:black;
+}
+.movies{
+    display: flex;
+
+}
+table.playlist tr th{
+    background-color: yellow;
+    padding: 10px;
+    width: 150;
+    color: black;
+}
+table.playlist{
+    width:100%;
+    padding: 10px;
+    border-left: 1px solid #333;
+    border-right: 1px solid #333 ;
+    border-color: white;
+    border-collapse: collapse;
+    border:1px solid #333;
+
+}
+.form
+{
+    border: red;
+}
+.footer{
+    background-color: yellow;
+    color:white;
+}
+.form{
+    width: 80%;
+    border: 3px solid red;
+    padding: 20px;
+}
+.form form #tel1{
+    width: 20px;
+}
