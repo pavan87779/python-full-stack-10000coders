@@ -1,0 +1,45 @@
+span{
+color:red;
+}
+.first>li{
+color:red;
+}
+h2+p{
+    color:green;
+}
+h1~p{
+    color:blue;
+}
+.t5 li:first-child{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.t5 li:last-child{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+button:hover{
+    background-color: yellow;
+    font: black;
+}
+.form input:focus{
+    background-color: lightblue;
+
+}
+.t8::first-letter{
+    color: red;
+    font-size: 100px;
+    font-weight: bold;
+
+}
+.t8::first-line{
+    color: green;
+}
+.t9::before{
+    content: "🌟";
+}
+.t10::selection{
+    background-color: red;
+    color:white;
+
+}
