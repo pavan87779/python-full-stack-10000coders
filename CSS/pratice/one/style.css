@@ -1,0 +1,43 @@
+.maincontainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.color{
+padding: 10px;
+border: 3px solid black;
+margin:10px;
+height: 200px;
+width: 200px;
+text-align: center;
+}
+.type{
+ border-radius: 50px;
+ height: 80px;
+ width: 80px;
+ margin: auto;
+ border: 3px solid black;
+
+}
+#color{
+background-color: red;
+}
+#hexa{
+background-color:#16476A ;
+}
+#rgb{
+    background-color: rgb(11, 130, 249);
+
+}
+#rgba{
+    background-color: rgb(11, 130, 249,0.5);
+
+}
+#hsl{
+        background-color: rgb(249, 11, 158);
+
+
+}
+#hsla{
+        background-color: rgb(249, 11, 158,0.5);
+
+}
