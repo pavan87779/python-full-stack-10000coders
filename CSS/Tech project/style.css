@@ -91,6 +91,8 @@ body{
 .products{
     display: flex;
     flex-direction: row;
+    margin: 10px;
+    padding: 10px;
 
 }
 .cart1{
@@ -131,17 +133,17 @@ body{
 }
 .cart-title1{
     color: gray;
-    font-size: 15px;
+    font-size: 20px;
 
 }
 .cart-title2{
     color: gray;
-    font-size: 15px;
+    font-size: 20px;
 }
 .cart-title3{
     size: 30px;
     color: gray;
-    font-size: 15px;
+    font-size: 20px;
 }
 .cart-img img{
     background-color: #000000;
@@ -169,8 +171,115 @@ body{
 .category a{
     text-decoration: none;
     color:white;
-    font-size: 15px;
+    font-size: 18px;
 }
 .category a:hover{
     background-color:rgb(255, 0, 0);
+}
+.allproducts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tcart{
+    margin: 8px;
+    margin-left: 40px;
+    padding: 10px;
+    border: 1px solid #2b2b2b;
+
+
+}
+.tcart del{
+    color: gray;
+    font: bold;
+}
+.tcart-brow a{
+    align-items: center;
+    text-decoration: none;
+    color: gray;
+    font-size: 25px;
+}
+.tcart-img p{
+    color: gray;
+}
+
+.tcart button{
+    background-color: rgb(255,0,0);
+    color: white;
+    font-size: 15px;
+    width: 280px;
+    height: auto;
+}
+.tcart button:hover{
+    color: gray;
+}
+.advantages{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.advlist{
+    display: flex;
+}
+.advtext h4{
+    font-size: 18px;
+
+}
+.advtext a{
+    line-height: 0;
+    font-size: 12px;
+    color: gray;
+
+}
+.service{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.ser{
+    width: 300px;
+}
+
+.email{
+    background-color: black;
+    color: gray;
+}
+.ser a,p{
+    text-decoration: none;
+    color: gray;
+}
+.ser a:hover{
+    color: red;
+}
+.ser button:hover{
+    background-color: red;
+}
+hr{
+    color: gray;
+}
+.footer{
+    background-color: #000000;
+    width: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.fleft{
+    display: flex;
+    flex: flex-start;
+}
+.fright{
+    display: flex;
+    flex: flex-end;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.fright img{
+    color: white;
 }
