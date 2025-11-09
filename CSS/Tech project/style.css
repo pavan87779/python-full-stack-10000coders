@@ -9,21 +9,23 @@ body{
     top: 0;
     flex-direction: row; 
     width: 100%; 
-    border: 2px solid black; 
+    border: 1px solid black; 
     color:white;
 }
 .nav-left{
+    display: flex;
+    flex-direction: row;
     left: 0;
     top: 0;
-    font-size: 22px;
+    font-size: 20px;
 }
 .nav-right{
-    text-decoration: none;
-    padding-left: 180vb;
-    gap: 22px;
-    left: 0;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;  
+  gap: 18px;                  
+  flex: 1;  
 }
 .icon {
   font-size: 22px;
@@ -59,12 +61,13 @@ body{
     font-size: 18px;
 }
 .hero-text h1{
-    line-height: 29px;
+    line-height: 45px;
     font-size: 68px;
 
 
 }
 .hero-text p{
+    color: white;
     line-height: 10px;
     font-size: 25px;
     font: bold;
@@ -282,4 +285,68 @@ hr{
 }
 .fright img{
     color: white;
+}
+@media (max-width: 600px) {
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  .nav-right {
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 8px;
+    height: auto;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
+  .hero-img {
+    padding: 0;
+  }
+
+  .hero-img img {
+    width: 250px;
+    height: auto;
+    
+  }
+
+
+.cart1,.cart2,.cart3{
+display:flex;
+    flex-direction:column;
+    margin-bottom:10px;
+}
+  .advantages {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .service {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .fright {
+    justify-content: center;
+  }
 }
