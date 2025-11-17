@@ -311,5 +311,147 @@ Find Second Smallest Number in List
 print("--------------------------------------------------")
 print(18)
 print("Copy List to Another List")
-def
+def copy_lst(lst):
+    nlst = lst.copy()
+    return nlst
+l=[1, 2, 3]
+print(l)
+print("copied list: ",copy_lst(l))
+"""
+18
+Copy List to Another List
+[1, 2, 3]
+copied list:  [1, 2, 3]
+"""
+print("--------------------------------------------------")
+print(19)
+print("Print All Prime Numbers in List")
+l = [1, 2, 3, 4, 5]
+def primenumbers_list(l):
+    p = []
+    for i in l:
+        count=0
+        for j in range(1,i+1):
+            if i%j==0:
+                count+=1
+        if count==2:
+            p.append(i)
+    return p
+print(l)
+print(primenumbers_list(l))
+"""
+19
+Print All Prime Numbers in List
+[1, 2, 3, 4, 5]
+[2, 3, 5]
+"""
+print("--------------------------------------------------")
+print(20)
+print("Replace All Zeroes with a Given Number")
+l=[0, 2, 0, 4]
+def replace_zeros(l):
+    for i in range(len(l)):
+        if l[i] ==0:
+            l[i] = -1
+    return l
+print(l)
+print(replace_zeros(l))
+"""
+20
+Replace All Zeroes with a Given Number
+[0, 2, 0, 4]
+[-1, 2, -1, 4]
+"""
+print("--------------------------------------------------")
+print(21)
+print("Check if All Elements Are Same")
+l =[5, 5, 5, 5]
+def check_elements(l):
+    a = True
+    for i in range(len(l)-1):
+        if l[i]!=l[i+1]:
+            a=False
+            break
+    return a
+print(l)
+print(check_elements(l))
+"""
+21
+Check if All Elements Are Same
+[5, 5, 5, 5]
+True
+"""
+print("--------------------------------------------------")
+print(22)
+print("Find Frequency of All Elements")
+l = [1,2,2,3,1]
+def frequency_elements(l):
+    s = set(l)
+    d = dict()
+    for i in s:
+        d[i]=0
+    for i in range(len(l)):
+        if l[i] in l:
+            d[l[i]]+=1
+    return d
+print(l)
+print(frequency_elements(l))
+"""
+22
+Find Frequency of All Elements
+[1, 2, 2, 3, 1]
+{1: 2, 2: 2, 3: 1}
+"""
+print("--------------------------------------------------")
+print(23)
+print("Flatten a Nested List")
+l =[[1,2],[3,4]]
+def flatten_list(l):
+    n=[]
+    for i in range(len(l)):
+        for j in range(len(l[i])):
+            n.append(l[i][j])
+    return n
+print(l)
+print(flatten_list(l))
+"""
+23
+Flatten a Nested List
+[[1, 2], [3, 4]]
+[1, 2, 3, 4]
+"""
+print("--------------------------------------------------")
+print(24)
+print("Split a List into Even and Odd Lists")
+l=[1, 2, 3, 4, 5]
+def even_odd(l):
+    e=[]
+    o=[]
+    for i in l:
+        if i %2==0:
+            e.append(i)
+        else:
+            o.append(i)
+    return f"Even: {e} Odd: {o}"
+print(l)
+print(even_odd(l))
+"""
+24
+Split a List into Even and Odd Lists
+[1, 2, 3, 4, 5]
+Even: [2, 4] Odd: [1, 3, 5]
+"""
+print("--------------------------------------------------")
+print(25)
+print("Find Pair of Elements with Given Sum")
+l =[1, 2, 3, 4]
+s = 5
+def pair_elements(l,s):
+    a=()
+    for i in range(len(l)):
+        for j in range(len(l)-1):
+            if l[j]+l[i]==s:
+                a.add(l[j],l[i])
+                
+                
         
