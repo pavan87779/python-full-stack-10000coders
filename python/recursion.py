@@ -447,11 +447,310 @@ print("Find Pair of Elements with Given Sum")
 l =[1, 2, 3, 4]
 s = 5
 def pair_elements(l,s):
-    a=()
+    a=[]
     for i in range(len(l)):
-        for j in range(len(l)-1):
-            if l[j]+l[i]==s:
-                a.add(l[j],l[i])
-                
-                
-        
+        for j in range(i+1,len(l)):
+            if l[i]+l[j]==s:
+                a.append((l[i],l[j]))
+    return list(a)
+print(l)
+print(s)
+print(pair_elements(l,s))
+"""
+25
+Find Pair of Elements with Given Sum
+[1, 2, 3, 4]
+5
+[(1, 4), (2, 3)]
+"""
+print("--------------------------------------------------")
+print(26)
+print("Remove All Odd Numbers")
+l=[1, 2, 3, 4, 5]
+def remove_odd(l):
+    for i in l:
+        if i%2!=0:
+            l.remove(i)
+    return l
+print(l)
+print(remove_odd(l))
+"""
+26
+Remove All Odd Numbers
+[1, 2, 3, 4, 5]
+[2, 4]
+"""
+print("--------------------------------------------------")
+print(27)
+print("Remove All Even Numbers")
+l=[1, 2, 3, 4, 5]
+def remove_even(l):
+    for i in l:
+        if i%2==0:
+            l.remove(i)
+    return l
+print(l)
+print(remove_even(l))
+"""
+27
+Remove All Even Numbers
+[1, 2, 3, 4, 5]
+[1, 3, 5]
+"""
+print("--------------------------------------------------")
+print(28)
+print("Multiply All Elements by a Number")
+l=[1, 2, 3]
+n = 2
+def multiply_lst(l,n):
+    nl=[0]*len(l)
+    for i in range(len(l)):
+        nl[i] = l[i]*n
+    return nl
+print(l)
+print(n)
+print(multiply_lst(l,n))
+"""
+28
+Multiply All Elements by a Number
+[1, 2, 3]
+2
+[2, 4, 6]
+"""
+print("--------------------------------------------------")
+print(29)
+print("Find Difference Between Max and Min") 
+l=[4, 2, 7, 1]
+def min_max_diff(l):
+    lar=float('-inf')
+    small= float('inf')
+    for i in range(len(l)):
+        if l[i]>lar:
+            lar=l[i]
+    for j in range(len(l)):
+        if l[j]<small:
+            small=l[j]
+    return lar-small
+print(l)
+print(min_max_diff(l))
+"""
+29
+Find Difference Between Max and Min
+[4, 2, 7, 1]
+6
+"""
+print("--------------------------------------------------")
+print(30)
+print("Check if a List is Empty") 
+l=[] 
+def check_lst_empty(l):
+    a=True
+    if len(l)!=0:
+        a=False
+    return a
+print(l)
+print(check_lst_empty(l))
+"""
+30
+Check if a List is Empty
+[]
+True
+"""
+print("--------------------------------------------------")
+print(31)
+print("Insert Element at Specific Index") 
+l=[1, 2, 4]
+element=3
+ind=2
+def insert_e_i(l,e,i):
+    l.insert(i,e)
+    return l
+print(l)
+print(insert_e_i(l,element,ind))
+"""
+31
+Insert Element at Specific Index
+[1, 2, 4]
+[1, 2, 3, 4]
+"""
+print("--------------------------------------------------")
+print(32)
+print("Remove All Instances of a Value")
+l=[1, 2, 2, 3]
+x=2
+def remove_instance(l,x):
+    i=0
+    while i<len(l):
+        if l[i]==x:
+            l.pop(i)
+        else:
+            i+=1
+    return l
+print(l)
+print("remove ",x)
+print(remove_instance(l,x))
+"""
+32
+Remove All Instances of a Value
+[1, 2, 2, 3]
+remove  2
+[1, 3]
+"""
+print("--------------------------------------------------")
+print(33)
+print("Get Index of an Element")
+l=[10, 20, 30]
+x=20
+def index_of_element(l,x):
+    ind=False
+    for i in range(len(l)):
+        if l[i]==x:
+            ind = i
+    return f"index of {x} is {ind}"
+print(l)
+print(x)
+print(index_of_element(l,x))
+"""
+33
+Get Index of an Element
+[10, 20, 30]
+20
+index of 20 is 1
+"""
+print("--------------------------------------------------")
+print(34)
+print("Square All Elements in a List")
+l=[1, 2, 3]
+def square_elements(l):
+    for i in range(len(l)):
+        l[i] = l[i]**2
+    return l
+print(l)
+print(square_elements(l))
+"""
+34
+Square All Elements in a List
+[1, 2, 3]
+[1, 4, 9]
+"""
+print("--------------------------------------------------")
+print(35)
+print("Filter Out Negative Numbers")
+l= [-1, 2, -3, 4]
+def remove_neg_elements(l):
+    n=[]
+    for i in range(len(l)):
+        if l[i]>=0:
+            n.append(l[i])
+    return n
+print(l)
+print(remove_neg_elements(l))
+"""
+35
+Filter Out Negative Numbers
+[-1, 2, -3, 4]
+[2, 4]
+"""
+print("--------------------------------------------------")
+print(36)
+print("Get Elements Greater Than a Value")
+l=[1, 5, 8, 3]
+g=4
+def greater_elements(l,g):
+    s=[]
+    for i in l:
+        if i>g:
+            s.append(i)
+    return s
+print(l)
+print(g)
+print(greater_elements(l,g))
+"""
+36
+Get Elements Greater Than a Value
+[1, 5, 8, 3]
+4
+[5, 8]
+"""
+print("--------------------------------------------------")
+print(37)
+print("Find Duplicates in List")
+l=[1, 2, 2, 3, 3, 4]
+def duplicates_in_list(l):
+    d=[]
+    for i in range(len(l)):
+        count=0
+        for j in range(len(l)):
+            if l[i]==l[j]:
+                count+=1
+        if count>1:
+            d.append(l[i])
+    d=set(d)
+    return list(d)
+print(l)
+print(duplicates_in_list(l))
+"""
+37
+Find Duplicates in List
+[1, 2, 2, 3, 3, 4]
+[2, 3]
+"""
+print("--------------------------------------------------")
+print(38)
+print("Rotate List Elements Right")
+l=[1, 2, 3, 4]
+k=2
+def rotate_list_element(l,k):
+    k = k%len(l)
+    new=[0]*len(l)
+    for i in range(len(l)):
+        new[(i+k)%len(l)] = l[i]
+    return new
+print(l)
+print(f"rotate elements by {k}")
+print(rotate_list_element(l,k))
+"""
+38
+Rotate List Elements Right
+[1, 2, 3, 4]
+rotate elements by 2
+[3, 4, 1, 2]
+"""
+print("--------------------------------------------------")
+print(39)
+print("Check If List Contains a Value")
+l=[1, 2, 3]
+x=2
+def check_list_value(l,x):
+    a = True
+    if x not in l:
+        a=False
+    return a
+print(l,x)
+print(check_list_value(l,x))
+"""
+39
+Check If List Contains a Value
+[1, 2, 3] 2
+True
+"""
+print("--------------------------------------------------")
+print(40)
+print("Chunk List into Smaller Lists")
+l=[1, 2, 3, 4, 5, 6]
+c=2
+def l_into_smallerL(l, c):
+    ch = []
+    for i in range(0, len(l), c):   
+        ch.append(l[i:i+c])     
+    return ch
+
+print(l, c)
+print(l_into_smallerL(l, c))
+"""
+40
+Chunk List into Smaller Lists
+[1, 2, 3, 4, 5, 6] 2
+[[1, 2], [3, 4], [5, 6]]
+"""
+            
